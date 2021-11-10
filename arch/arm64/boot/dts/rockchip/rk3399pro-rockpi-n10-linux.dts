@@ -75,7 +75,7 @@
 	};
 
 	panel: panel {
-		status = "disabled";
+		status = "okay";
 		compatible = "simple-panel";
 		backlight = <&backlight>;
 		enable-gpios = <&gpio4 RK_PD3 GPIO_ACTIVE_HIGH>;
@@ -253,7 +253,7 @@
 };
 
 &edp {
-	status = "disabled";
+	status = "okay";
 	force-hpd;
 
 	ports {
@@ -309,7 +309,7 @@
 };
 
 &i2c1 {
-	status = "disabled";
+	status = "okay";
 	i2c-scl-rising-time-ns = <140>;
 	i2c-scl-falling-time-ns = <30>;
 
@@ -414,7 +414,7 @@
 };
 
 &pwm0 {
-	status = "disabled";
+	status = "okay";
 };
 
 &pwm2 {
@@ -571,7 +571,8 @@
 };
 
 &route_edp {
-	status = "disabled";
+	status = "okay";
+  logo,mode = "center";
 };
 
 &saradc {
